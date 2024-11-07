@@ -34,7 +34,6 @@ def hash_object(object_type, file_name):
     with open(os.path.join(git_path, sha[0:2], sha[2:]), "wb") as file:
         file.write(zlib.compress(store))
     print(sha)
-    print(sha, end="")
 def main():
     command = sys.argv[1]
     if command == "init":
